@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybershield Community Portal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Top header styling */
+        .top-header {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+
+        .top-header ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-header ul li {
+            display: inline;
+        }
+
+        .top-header ul li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .top-header .btn {
+            background-color: #28a745;
+            border: none;
+        }
+
+        /* Logo styling */
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: auto;
+            z-index: 1000;
+        }
+
+        /* Navigation menu styling */
+        .navbar {
+    background-color: #28a745; /* Green color */
+}
+
+
+        /* Background image slider styling */
+        .carousel-inner img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover; /* Ensures the image covers the entire area */
+        }
+
+        /* Motto section above the slider */
+        .motto {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            z-index: 1001;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Button styling */
+        .motto .btn {
+            margin-top: 20px;
+            background-color: #28a745;
+            border: none;
+        }
+
+        /* Content sections */
+        .content-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .events img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* Ensures the image fits within the specified dimensions */
+        }
+
+        .past-events img, .past-events video {
+            width: 100%;
+            height: 500px;
+            object-fit: cover; /* Ensures the video/image fits within the specified dimensions */
+        }
+
+        /* Join Hands Section Styling */
+        .join-hands {
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .join-hands .btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="https://cybershield.co.tz/">Cybershield</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Partner.html">Partner with Us</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="contact.html">contacts</a>
+                </li>
+            </ul>
+        </div>  
+    </nav>
+
+    <!-- Motto above the sliding background image -->
+    <div class="motto">
+        <h1>Empowering your Cybersecurity awareness and Carrier growth</h1>
+        <a href="form.php" class="btn btn-success">Join the Community</a>
+    </div>
+
+    <!-- Sliding Background Image -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="assets/img/beauty.jpg" alt="Background 0">
+            </div>
+            <div class="carousel-item active">
+                <img src="assets/img/all.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/org.jpg" alt="Background 2">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/cyno.jpg" alt="Background 3">
+            </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+	
+  <!-- Our Community Events Section -->
+<div class="content-section events">
+    <h2>Our Community Initiatives</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="assets/img/aware.jpg" alt="Cybersecurity Awareness Campaigns">
+            <h4>Cybersecurity Awareness Campaigns</h4>
+            <p>Engaging the community through informative campaigns that highlight the importance of cybersecurity best practices in everyday life.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="assets/img/proffesional.png" alt="Professional Development Workshops">
+            <h4>Professional Development Workshops</h4>
+            <p>Empowering professionals with the latest skills and knowledge in cybersecurity through hands-on training and expert-led sessions.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="assets/img/webiner.jpg" alt="Webinar Events">
+            <h4>Webinar Events</h4>
+            <p>Bringing together experts and enthusiasts from around the world to discuss emerging trends and challenges in the cybersecurity landscape.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="assets/img/opens.jpg" alt="Open Source Security Tools Development">
+            <h4>Open Source Security Tools Development</h4>
+            <p>Collaborating on the creation and enhancement of open-source tools that address critical security needs in the digital environment.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="assets/img/news.png" alt="Security newsletter">
+            <h4>Security Newsletter</h4>
+            <p>Providing regular updates, insights, and analysis on the latest developments in cybersecurity, tailored for our community members.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Join Hands Section -->
+<div class="content-section join-hands" style="background-image: url('assets/img/beauty.jpg'); background-size: cover; background-position: center; padding: 60px 0; color: white; text-align: center;">
+    <h2>Join Hands with Our Initiative and Work with Us</h2>
+    <p style="font-size: 1.2em;">Be part of our mission to enhance cybersecurity awareness and development.</p>
+    <a href="mailto:godwin@cybershield.co.tz" class="btn btn-primary" style="margin-top: 20px;">Organize Your Event with Us</a>
+</div>
+
+
+    <!-- Our Past Events Section -->
+    <div class="content-section past-events bg-light">
+        <h2>Our Past Events</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <video controls>
+                    <source src="assets/img/short.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h4>DPSC Training</h4>
+                <p> July 2024</p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/all.jpg" alt="Past Event">
+                <h4>Whizy Training Prgram </h4>
+                <p>May 2024.</p>
+            </div>
+			<div class="col-md-6">
+                <img src="assets/img/cyno.jpg" alt="Past Event">
+                <h4>Cyno-hackathons</h4>
+                <p>March 2024.</p>
+            </div>
+			<div class="col-md-6">
+                <img src="assets/img/kenny.jpg" alt="Past Event">
+                <h4>Cybersecurity and business Webiner</h4>
+                <p> 30 July 2024.</p>
+            </div>
+        </div>
+    </div>
+	<!-- Our Partners Section -->
+<div class="partners-section content-section">
+    <h2>Our Partners</h2>
+    <div class="container">
+        <div class="row">
+            <!-- Partner 1 -->
+            <div class="col-md-3">
+                <div class="partner-logo">
+                    <img src="assets/img/partners/broken.jpg" alt="Partner 1">
+                </div>
+            </div>
+            <!-- Partner 2 -->
+            <div class="col-md-3">
+                <div class="partner-logo">
+                    <img src="assets/img/sarufi.png" alt="Partner 2">
+                </div>
+            </div>
+            <!-- Partner 3 -->
+            <div class="col-md-3">
+                <div class="partner-logo">
+                    <img src="assets/img/partners/tech.jpg" alt="Partner 3">
+                </div>
+            </div>
+            <!-- Partner 4 -->
+            <div class="col-md-3">
+                <div class="partner-logo">
+                    <img src="assets/img/partners/furqan.png" alt="Partner 4">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Partner 5 -->
+            <div class="col-md-3">
+                <div class="partner-logo">
+                    <img src="assets/img/Partners/route.png" alt="Partner 5">
+                </div>
+            </div>
+            <!-- Partner 6 -->
+            <div class="col-md-3">
+                <div class="partner-logo">
+                    <img src="assets/img/partners/kenya.png" alt="Partner 6">
+                </div>
+            </div>
+            <!-- Partner 7 -->
+            <div class="col-md-3">
+                <div class="partner-logo">
+                    <img src="assets/img/partners/ict.png" alt="Partner 7">
+                </div>
+            </div>
+            <!-- Partner 8 -->
+            <div class="col-md-3">
+                <div class="partner-logo">
+                    <img src="assets/img/partners/dgt.jpg" alt="Partner 8">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .partners-section {
+        background-color: #f8f9fa;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .partner-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Ensures the div takes the full height of its column */
+    }
+
+    .partner-logo img {
+        width: 100px; /* Adjust size as needed */
+        height: 100px; /* Adjust size as needed */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image covers the circular area */
+        margin: 20px; /* Adds margin around the logos */
+    }
+
+    @media (max-width: 767px) {
+        .partner-logo img {
+            width: 80px; /* Adjust for smaller screens */
+            height: 80px; /* Adjust for smaller screens */
+        }
+    }
+</style>
+<!-- Footer Section -->
+<footer class="text-center footer-black">
+<style>
+/* Footer Styling */
+.footer-black {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add some padding */
+    position: relative; /* Ensure proper positioning */
+    bottom: 0;
+    width: 100%;
+}
+</style>
+    <p>&copy; 2024 Cybershield Tanzania. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Include the footer -->
+</body>
+</html>
+

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner with Us - Cybershield Community Portal</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Navigation menu styling */
+        .navbar {
+            background-color: #28a745; /* Green color */
+        }
+
+        /* Sliding background image styling */
+        .carousel-inner img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover; /* Ensures the image covers the entire area */
+        }
+
+        /* Motto section styling */
+        .motto {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            z-index: 1001;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Content sections */
+        .content-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container img {
+            width: 250px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .section-container {
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .section-container p {
+            font-size: 1.2em;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#index.php">Cybershield Community Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="event.html">Events</a>
+                </li>
+               
+            </ul>
+        </div>  
+    </nav>
+
+    <!-- Motto Section -->
+    <div class="motto">
+        <h3>Empower cybersecurity together—partner with us to make a difference.</h3>
+    </div>
+
+    <!-- Sliding Background Image -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/partner1.jpg" alt="Partner 1">
+            </div>
+         
+            <div class="carousel-item">
+                <img src="assets/img/partner3.jpg" alt="Partner 3">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Partner with Us Section -->
+    <div class="content-section">
+        <h2>Partner with Us</h2>
+        <div class="container">
+            <div class="row">
+                <!-- College Chapter Leader -->
+                <div class="col-md-4">
+                    <div class="section-container">
+                        <img src="assets/img/leader.png" alt="College Ambassador">
+                        <h4>College Chapter Leader</h4>
+                        <p>Become a representative of Cybershield at your college and build your cybersecurity skills through leadership.</p>
+                        <a href="request.php" class="btn btn-custom">Apply Here</a>
+                    </div>
+                </div>
+                <!-- Cybershield Volunteer -->
+                <div class="col-md-4">
+                    <div class="section-container">
+                        <img src="assets/img/verified.png" alt="Volunteer">
+                        <h4>Cybershield Volunteer</h4>
+                        <p>Join our team of volunteers to support our events and initiatives, helping to make a difference in the cybersecurity community.</p>
+                        <a href="request.php" class="btn btn-custom">Send Request</a>
+                    </div>
+                </div>
+                <!-- Organize Request Service -->
+                <div class="col-md-4">
+                    <div class="section-container">
+                        <img src="assets/img/partnership.jpg" alt="Organize">
+                        <h4>Organization Partnership</h4>
+                        <p>Organize training sessions, workshops, and targeted newsletters with us to enhance cybersecurity awareness and education.</p>
+                        <a href="request.php" class="btn btn-custom">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+<footer class="text-center footer-black">
+<style>
+/* Footer Styling */
+.footer-black {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add some padding */
+    position: relative; /* Ensure proper positioning */
+    bottom: 0;
+    width: 100%;
+}
+</style>
+    <p>&copy; 2024 Cybershield Tanzania. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Include the footer -->
+</body>
+</html>

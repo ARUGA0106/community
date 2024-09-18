@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Events</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation Menu */
+        .navbar {
+            background-color: #4CAF50;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-item {
+            display: inline;
+        }
+
+        .nav-link {
+            color: white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('assets/img/beauty.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Events Section */
+        .events-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        .event {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .event h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .event p {
+            margin: 5px 0;
+        }
+
+        .completed {
+            background-color: #d4edda;
+            color: #155724;
+            border-color: #c3e6cb;
+        }
+		
+	.event-date {
+    color: red;
+    font-weight: bold;
+}
+
+
+        .attend-button {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .read-more-button {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="https://cybershield.co.tz/">Cybershield</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="partner.html">Partner with Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Stay Secure, Stay Informed</h1>
+            <p>Join Our Cybersecurity Events, Workshops, and Trainings</p>
+            <a href="#events" class="cta-button">Explore Events</a>
+        </div>
+    </header>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="event completed">
+            <h3>Data Security Webinar</h3>
+            <p>15 August</p>
+            <p>Completed</p>
+        </div>
+        <div class="event completed">
+            <h3>DSPC Training</h3>
+            <p>26-27 July</p>
+            <p>Completed</p>
+        </div>
+        <div class="event">
+            <h3>Cybersecurity Awareness Month Workshop</h3>
+            <p>31 October 2024</p>
+            <p>Upcoming-physical</p>
+			<p>Dar es salaam</p>
+            <a href="https://forms.gle/fAzowrZJzT6aAW1X9" class="attend-button">Attend</a>
+            <a href="eventbrief.html" class="read-more-button">Read More</a>
+        </div>
+        <div class="event">
+            <h3>VAPT Workshop</h3>
+            <p>16-17 November, 2024</p>
+            <p>Upcoming- physical & virtual</p>
+			<p>Dar es salaam</P>
+            <a href="https://forms.gle/fAzowrZJzT6aAW1X9" class="attend-button">Attend</a>
+            <a href="eventbrief.html" class="read-more-button">Read More</a>
+        </div>
+		<div class="event">
+            <h3>Cybersecurity tools development</h3>
+             <p class="Event-date">30 November, 2024</p>
+            <p>Upcoming-Virtual</p>
+            <a href="https://forms.gle/fAzowrZJzT6aAW1X9" class="attend-button">Attend</a>
+            <a href="eventbrief.html" class="read-more-button">Read More</a>
+        </div>
+        <div class="event">
+            <h3>Secure Coding Workshop</h3>
+            <p class="Event-date">5-6 December 2024</p>
+            <p>Upcoming- Physical & Virtual</p>
+			<p> Dar es salaam</p>
+            <a href="https://forms.gle/fAzowrZJzT6aAW1X9" class="attend-button">Attend</a>
+            <a href="eventbrief.html" class="read-more-button">Read More</a>
+        </div>
+		
+	 
+    </section>
+	<!-- Assuming this is part of your existing "Contact Us" section -->
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Cybershield Tanzania</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
